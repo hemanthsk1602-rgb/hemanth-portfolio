@@ -50,6 +50,7 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose }) => 
     { label: 'Jump to About Section', action: () => scrollToSection('#about'), icon: Compass, category: 'Navigation' },
     { label: 'Jump to Skills & Stack', action: () => scrollToSection('#skills'), icon: Code2, category: 'Navigation' },
     { label: 'Jump to Featured Projects', action: () => scrollToSection('#projects'), icon: Layers, category: 'Navigation' },
+    { label: 'Explore CodeArena 3D Platform', action: () => window.open('https://github.com/hemanthsk1602-rgb/Project', '_blank'), icon: Code2, category: 'Projects' },
     { label: 'Launch FitPlus Live Demo', action: () => window.location.href = '/dashboard', icon: Zap, category: 'Projects' },
     { label: 'Jump to Learning Journey', action: () => scrollToSection('#journey'), icon: ArrowRight, category: 'Navigation' },
     { label: 'Jump to Education Credentials', action: () => scrollToSection('#education'), icon: Compass, category: 'Navigation' },

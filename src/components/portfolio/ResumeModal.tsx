@@ -173,6 +173,20 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                   <div className="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-bold text-slate-900 text-[13px]">
+                        CodeArena — 3D Algorithmic Platform
+                      </span>
+                      <span className="text-[11px] font-mono text-purple-600 font-semibold">
+                        Next.js, Three.js, WebGL, Monaco
+                      </span>
+                    </div>
+                    <p className="text-slate-600 mb-1.5">
+                      Competitive programming workstation featuring interactive Three.js 3D algorithmic polyhedra, dynamic Big-O complexity surfaces, real-time Monaco code execution, and heuristic AI code reviews.
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="font-bold text-slate-900 text-[13px]">
                         FitPlus — AI-Powered Fitness Platform
                       </span>
                       <span className="text-[11px] font-mono text-blue-600 font-semibold">

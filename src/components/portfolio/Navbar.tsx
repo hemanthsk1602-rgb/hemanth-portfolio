@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, FileText, ArrowUpRight, Terminal, Zap, Gamepad2 } from 'lucide-react';
+import { Menu, X, FileText, ArrowUpRight, Terminal, Zap, Gamepad2, Code2 } from 'lucide-react';
 
 interface NavbarProps {
   onOpenCommand?: () => void;
@@ -159,6 +159,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommand, onOpenResume }) =
               </button>
             )}
 
+            {/* CodeArena 3D Platform Button */}
+            <a
+              href="https://github.com/hemanthsk1602-rgb/Project"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-violet-700 bg-violet-50 hover:bg-violet-100 border border-violet-200/90 rounded-btn transition-all duration-200 shadow-subtle-sm hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600"
+              title="Explore CodeArena 3D Developer Platform"
+            >
+              <Code2 className="w-3.5 h-3.5 text-violet-600" />
+              <span>CodeArena 3D</span>
+            </a>
+
             {/* Bat Escape Arcade Button */}
             <Link
               href="/bat-escape"
@@ -202,14 +214,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommand, onOpenResume }) =
 
           {/* Mobile Actions: Resume & Hamburger Button */}
           <div className="flex lg:hidden items-center gap-2">
-            <Link
-              href="/bat-escape"
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg"
-              title="Play Bat Escape Arcade"
+            <a
+              href="https://github.com/hemanthsk1602-rgb/Project"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-semibold text-violet-700 bg-violet-50 hover:bg-violet-100 border border-violet-200 rounded-lg"
+              title="CodeArena 3D Platform"
             >
-              <Gamepad2 className="w-3.5 h-3.5 text-purple-600" />
-              <span>Bat Escape</span>
-            </Link>
+              <Code2 className="w-3.5 h-3.5 text-violet-600" />
+              <span>CodeArena</span>
+            </a>
 
             <Link
               href="/dashboard"
@@ -276,6 +290,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCommand, onOpenResume }) =
             </nav>
 
             <div className="pt-4 border-t border-slate-100 flex flex-col gap-2.5">
+              <a
+                href="https://github.com/hemanthsk1602-rgb/Project"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 text-sm font-semibold text-violet-800 bg-violet-50 hover:bg-violet-100 rounded-xl transition-colors border border-violet-200 shadow-sm"
+              >
+                <Code2 className="w-4 h-4 text-violet-600" />
+                <span>Explore CodeArena 3D Platform ↗</span>
+              </a>
+
               <Link
                 href="/dashboard"
                 onClick={() => setMobileMenuOpen(false)}

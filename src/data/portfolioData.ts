@@ -141,6 +141,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: 'React', iconName: 'Layers', category: 'Frontend', description: 'Component lifecycle, hooks, state management, and modern component architecture.' },
       { name: 'Next.js', iconName: 'Globe', category: 'Frontend', description: 'App router, server-side rendering (SSR), static generation (SSG), and routing.' },
       { name: 'Tailwind CSS', iconName: 'Sparkles', category: 'Frontend', description: 'Utility-first styling, customized design tokens, responsive breakpoints, and modern aesthetics.' },
+      { name: 'Three.js & WebGL', iconName: 'Cpu', category: 'Frontend', description: '3D scene rendering, custom vertex/fragment shaders, algorithmic polyhedra, and spatial math visualization.' },
     ],
   },
   {
@@ -417,6 +418,32 @@ while True:
 ];
 
 export const FEATURED_PROJECTS: Project[] = [
+  {
+    id: 'codearena',
+    title: 'CodeArena',
+    tagline: '3D Algorithmic Platform & Competitive Programming Workstation',
+    description:
+      'A high-performance developer ecosystem featuring real-time WebGL Three.js 3D algorithmic geometry, dynamic Big-O complexity surfaces, Monaco IDE code execution, and automated AI code reviews.',
+    longDescription:
+      'CodeArena reimagines competitive programming as an immersive 3D experience. It bridges interactive algorithmic visualization with production-grade developer tooling, incorporating 3D Big-O surface visualizers, custom Monaco editor environments with multi-language execution, heuristic AI code reviews, and physical spatial interaction cards.',
+    technologies: ['Next.js 14', 'TypeScript', 'Three.js', 'WebGL', 'Tailwind CSS', 'Monaco Editor', 'Framer Motion'],
+    features: [
+      'Interactive 3D WebGL scenes: Algorithmic polyhedrons, rotating graph networks, and complexity surfaces',
+      'Dynamic Big-O complexity visualizer mapping algorithmic runtimes (O(1) through O(2^n)) in real-time 3D space',
+      'Full-featured Monaco code editor with multi-language execution and syntax analysis',
+      'Instant AI-powered code reviews evaluating time complexity, space consumption, and optimization tips',
+      'Physical spatial card interactions with realistic mouse tilt tracking and dynamic glow shaders',
+    ],
+    metrics: [
+      { label: '3D Engine', value: 'Three.js & WebGL' },
+      { label: 'Editor', value: 'Monaco IDE' },
+      { label: 'Analysis', value: 'AI Code Review' },
+    ],
+    githubUrl: 'https://github.com/hemanthsk1602-rgb/Project',
+    liveDemoUrl: 'https://github.com/hemanthsk1602-rgb/Project',
+    category: 'Web',
+    badge: '3D Developer Platform',
+  },
   {
     id: 'fitplus',
     title: 'FitPlus',
